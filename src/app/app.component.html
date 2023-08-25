@@ -22,15 +22,12 @@
 <mat-drawer-container class="container-auto" autosize>
   <mat-drawer #drawer class="sidenav" mode="over">
     <mat-nav-list>
-      <a mat-list-item (click)="home(); drawer.toggle();"> Home </a>
-      <a mat-list-item (click)="aboutMe(); drawer.toggle();"> Sobre</a>
-      <a mat-list-item (click)="portfolio(); drawer.toggle();">Portfolio</a>
-      <a mat-list-item (click)="projects(); drawer.toggle();">Projetos</a>
-      <a mat-list-item (click)="contact(); drawer.toggle();">Contato </a>
+      <a mat-list-item (click)="home(); drawer.toggle()"> Home </a>
+      <a mat-list-item (click)="aboutMe(); drawer.toggle()"> Sobre</a>
+      <a mat-list-item (click)="portfolio(); drawer.toggle()">Portfolio</a>
+      <a mat-list-item (click)="projects(); drawer.toggle()">Projetos</a>
+      <a mat-list-item (click)="contact(); drawer.toggle()">Contato </a>
     </mat-nav-list>
   </mat-drawer>
-  <div>
-    <br />
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 </mat-drawer-container>

@@ -1,0 +1,33 @@
+.title {
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.sub-title {
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.area-perfil {
+  width: 300px;
+
+  .image-perfil {
+    border-radius: 50%;
+  }
+}
+
+.fontawesomesvg {width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
