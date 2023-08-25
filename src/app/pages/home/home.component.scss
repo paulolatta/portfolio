@@ -24,3 +24,10 @@
   height: 1em;
   vertical-align: -.125em;
 }
+
+@media (max-width: 575px) {
+  .title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
