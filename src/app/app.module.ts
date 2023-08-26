@@ -17,6 +17,7 @@ import { NgModule } from '@angular/core';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PieChartComponent } from './components/pie-chart/pie-chart.component';
     ContactComponent,
     HomeComponent,
     AreaAboutComponent,
-    PieChartComponent
+    PieChartComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

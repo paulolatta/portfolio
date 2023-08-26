@@ -1,40 +1,33 @@
-<div class="container-principal h-100">
-  <div class="pt-5">
-    <mat-icon class="icon-display">person</mat-icon>
-    <span class="label">Sobre mim</span>
-  </div>
-
-  <div class="row d-flex flex-row flex-wrap flex-grow-1 mt-4">
-    <div class="col-6">
-      <app-area-about icon="school" title="Formação e habilidades">
-        <ng-container *ngFor="let item of items">
-          <div class="p-4 pt-2 d-flex align-items-center">
-            <span>
-              <mat-icon style="margin-right: 16px">check</mat-icon>
-            </span>
-            <span class="label-content"> {{ item }} </span>
-          </div>
-        </ng-container>
-
+<app-layout icon="person" title="Sobre mim">
+  <div class="col-6">
+    <app-area-about icon="school" title="Formação e habilidades">
+      <ng-container *ngFor="let item of items">
         <div class="p-4 pt-2 d-flex align-items-center">
           <span>
             <mat-icon style="margin-right: 16px">check</mat-icon>
           </span>
-
-          <button mat-raised-button color="primary" (click)="curriculo()">
-            CURRÍCULO.PDF
-          </button>
+          <span class="label-content"> {{ item }} </span>
         </div>
-      </app-area-about>
-    </div>
+      </ng-container>
 
-    <div class="col-6">
-      <app-area-about icon="code" title="Principais tecnologias que utilizo">
-        <div class="area-pie">
-          <app-pie-chart></app-pie-chart>
-          <p class="label-pie-chart">Anos de experiência</p>
-        </div>
-      </app-area-about>
-    </div>
+      <div class="p-4 pt-2 d-flex align-items-center">
+        <span>
+          <mat-icon style="margin-right: 16px">check</mat-icon>
+        </span>
+
+        <button mat-raised-button color="primary" (click)="curriculo()">
+          CURRÍCULO.PDF
+        </button>
+      </div>
+    </app-area-about>
   </div>
-</div>
+
+  <div class="col-6">
+    <app-area-about icon="code" title="Principais tecnologias que utilizo">
+      <div class="area-pie">
+        <app-pie-chart></app-pie-chart>
+        <p class="label-pie-chart">Anos de experiência</p>
+      </div>
+    </app-area-about>
+  </div>
+</app-layout>
