@@ -14,6 +14,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgModule } from '@angular/core';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { AreaAboutComponent } from './components/area-about/area-about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     PortfolioComponent,
     ProjectsComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    AreaAboutComponent
   ],
   imports: [
     BrowserModule,
