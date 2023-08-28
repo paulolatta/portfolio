@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PieChartComponent {
   public pieChartData = {
-    labels: ['Typescript', 'Angular', 'React', 'Bootstrap/Material UI'],
+    labels: ['Typescript', 'Angular', 'React', 'Bootstrap/Material'],
     datasets: [
       {
         data: [4, 2, 2, 1],

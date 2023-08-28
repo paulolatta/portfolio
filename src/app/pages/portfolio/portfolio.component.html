@@ -1,1 +1,41 @@
-<p>portfolio works!</p>
+<app-layout icon="table_chart" title="Sobre o Portfólio">
+  <div class="col-5">
+    <app-area icon="developer_mode" title="Algumas tecnologias utilizadas">
+      <ng-container *ngFor="let item of items">
+        <div class="p-4 pt-2 d-flex align-items-center">
+          <span>
+            <mat-icon style="margin-right: 16px">check</mat-icon>
+          </span>
+          <div>
+            <span class="label-content">
+              {{ item.title }}
+            </span>
+            <br />
+            <span class="label-sub"> {{ item.subtitle }} </span>
+          </div>
+        </div>
+      </ng-container>
+    </app-area>
+  </div>
+  <div class="col-7">
+    <app-area icon="info" title="Observações">
+      <ng-container *ngFor="let item of obs; let i = index">
+        <div class="p-4 pt-2 d-flex align-items-center">
+          <span>
+            <mat-icon style="margin-right: 16px"> {{ item.icon }} </mat-icon>
+          </span>
+          <span class="label-obs">
+            {{ item.text }}
+            <a
+              href="https://github.com/paulolatta/portfolio"
+              target="_blank"
+              *ngIf="i === obs.length - 1"
+            >
+              Portfólio GitHub
+            </a>
+          </span>
+        </div>
+      </ng-container>
+    </app-area>
+  </div>
+</app-layout>
