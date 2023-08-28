@@ -16,4 +16,11 @@ export class PortfolioComponent {
     },
     { title: 'ChartJS', subtitle: 'Biblioteca de gráficos' },
   ];
+
+  public obs = [
+    {icon: 'looks_one', text: 'O Netlify foi utilizado para a hospedagem do repositório do Portfólio.'},
+    {icon: 'looks_two', text: 'O Portfólio está totalmente responsivo para web e mobile.'},
+    {icon: 'looks_3', text: 'Última atualização: 28/08/2023'},
+    {icon: 'looks_4', text: 'O repositório do Portfólio pode ser visualizado/baixado através do link: '}
+  ]
 }
