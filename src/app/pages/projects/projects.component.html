@@ -1,1 +1,9 @@
-<p>projects works!</p>
+<app-layout icon="video_label" title="Projetos">
+  <div class="card-deck row pt-0 p-5">
+    <ng-container *ngFor="let item of items">
+      <div class="col-4 pt-4 p-5">
+        <app-card [card]="item"></app-card>
+      </div>
+    </ng-container>
+  </div>
+</app-layout>

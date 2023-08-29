@@ -1,0 +1,45 @@
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.card {
+  width: 270px;
+  height: 286px;
+  background-color: #212121;
+  color: var(--white);
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em white !important;
+  transform: translateY(-0.25em);
+}
+
+.card-img-top {
+  width: 260px;
+  max-height: 140px;
+  height: 140px;
+}
+
+.card-title {
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-muted {
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: rgba(255, 255, 255, 0.7) !important;
+}

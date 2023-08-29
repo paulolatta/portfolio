@@ -4,11 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AreaComponent } from './components/area-about/area.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { CardComponent } from './components/card/card.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -29,7 +31,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     HomeComponent,
     AreaComponent,
     PieChartComponent,
-    LayoutComponent
+    LayoutComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -40,8 +43,10 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
+    MatCardModule,
     IconComponent,
-    NgChartsModule
+    NgChartsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
