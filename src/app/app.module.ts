@@ -1,3 +1,5 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -6,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './components/card/card.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
 import { LayoutComponent } from './components/layout/layout.component';
@@ -51,6 +52,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
+    ReactiveFormsModule,
     ContactComponent
   ],
   providers: [],

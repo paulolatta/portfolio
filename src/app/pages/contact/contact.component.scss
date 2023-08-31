@@ -42,6 +42,26 @@
     .example-full-width {
       width: 100%;
     }
+
+    .icon-person {
+      color: white;
+      transform: scale(1.5);
+      margin-right: 8px;
+    }
+
+    .icon-email {
+      color: white;
+      transform: scale(1.2);
+      margin-right: 5px;
+    }
+
+    .span-title {
+      color: white;
+    }
+
+    .textarea {
+      height: 130px;
+    }
   }
 }
 

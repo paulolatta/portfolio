@@ -10,38 +10,40 @@
       breve!
     </span>
 
-    <form class="mt-4 example-form">
+    <form [formGroup]="form" class="mt-4 example-form">
       <mat-form-field class="campo-form">
         <mat-label>
-          <mat-icon
-            style="color: white; transform: scale(1.5); margin-right: 8px"
-          >
-            person
-          </mat-icon>
-          <span style="color: white">Nome</span>
+          <mat-icon class="icon-person"> person </mat-icon>
+          <span class="span-title">Nome</span>
         </mat-label>
 
-        <input matInput />
+        <input matInput formControlName="name" />
       </mat-form-field>
 
       <mat-form-field class="campo-form">
-        <mat-label style="color: white">
-          <mat-icon
-            style="color: white; transform: scale(1.2); margin-right: 5px"
-          >
-            email
-          </mat-icon>
+        <mat-label class="span-title">
+          <mat-icon class="icon-email"> email </mat-icon>
           Email
         </mat-label>
-        <input matInput />
+        <input type="email" matInput formControlName="email" />
       </mat-form-field>
 
       <mat-form-field class="campo-form">
-        <mat-label style="color: white">Mensagem</mat-label>
-        <textarea style="height: 130px" matInput></textarea>
+        <mat-label class="span-title">Mensagem</mat-label>
+        <textarea
+          class="textarea"
+          matInput
+          formControlName="message"
+        ></textarea>
       </mat-form-field>
 
-      <button mat-raised-button color="primary" class="mb-4">
+      <button
+        mat-raised-button
+        color="primary"
+        class="mb-4"
+        [disabled]="form.invalid"
+        (click)="enviar()"
+      >
         Enviar
         <mat-icon>send</mat-icon>
       </button>
