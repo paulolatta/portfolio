@@ -1,3 +1,15 @@
+@media (max-width: 575px) {
+  .card {
+    width: auto !important;
+    height: auto;
+  }
+
+  .card-img-top {
+    width: auto !important;
+  }
+}
+
+
 a {
   text-decoration: none;
   color: var(--white);
