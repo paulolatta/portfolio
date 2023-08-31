@@ -6,12 +6,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './components/card/card.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,7 +30,6 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     AboutMeComponent,
     PortfolioComponent,
     ProjectsComponent,
-    ContactComponent,
     HomeComponent,
     AreaComponent,
     PieChartComponent,
@@ -46,7 +48,10 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     MatCardModule,
     IconComponent,
     NgChartsModule,
-
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    ContactComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
