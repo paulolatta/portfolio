@@ -1,3 +1,5 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +13,9 @@ import { IconComponent } from './components/icon/icon.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,7 +31,6 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     AboutMeComponent,
     PortfolioComponent,
     ProjectsComponent,
-    ContactComponent,
     HomeComponent,
     AreaComponent,
     PieChartComponent,
@@ -46,7 +49,11 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     MatCardModule,
     IconComponent,
     NgChartsModule,
-
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ContactComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
