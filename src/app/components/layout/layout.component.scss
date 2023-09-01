@@ -14,3 +14,9 @@
   font-size: 34px;
   font-weight: 700;
 }
+
+@media (max-width: 575px) {
+  .label {
+    font-size: 28px;
+  }
+}
