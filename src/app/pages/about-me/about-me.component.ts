@@ -17,7 +17,7 @@ export class AboutMeComponent {
 
   curriculo(): void {
     window.open(
-      'https://drive.google.com/file/d/1DoAhFozplSM6A4R52LZ4n4_xMnAEy_IS/view?usp=drive_link',
+      '/assets/images/curriculo-paulo-gustavo.pdf',
       '_blank'
     );
   }
